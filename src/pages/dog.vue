@@ -45,18 +45,20 @@ export default {
 
 <style>
 div.wrapper {
-  display: flex;
-  flex-wrap: wrap;
   padding: 2rem;
+}
+
+div.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
 
 div.image-container img {
   width: 400px;
   height: 400px;
   border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 div.breed-name h6 {
