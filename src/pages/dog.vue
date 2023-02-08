@@ -69,9 +69,10 @@ div.breed-name h6 {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-top: 15px;
   color: #334645;
+  padding-bottom: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -93,7 +94,7 @@ p {
   }
 
   p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 </style>
