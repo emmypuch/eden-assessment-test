@@ -8,10 +8,12 @@
 </template>
 
 <style>
+div.logo {
+  padding: 2rem;
+}
+
 div.logo h4 {
-  font-size: 1rem;
-  margin-top: 15px;
-  margin-left: 15px;
+  font-size: 1.1rem;
   color: #124a44;
   font-weight: 400;
 }
@@ -21,9 +23,9 @@ div.logo a {
 }
 
 div.title h1 {
-  font-size: 3.5rem;
+  font-size: 3.3rem;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 40px;
   color: #124a44;
 }
 

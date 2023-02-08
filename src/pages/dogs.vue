@@ -116,7 +116,7 @@ export default {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #e4ebea;
+  background: #f9fbfb;
 }
 
 div.search-bar {
