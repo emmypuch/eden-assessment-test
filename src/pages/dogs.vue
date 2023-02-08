@@ -153,6 +153,7 @@ div.dog-images_container .dog-images {
   justify-content: center;
   align-content: center;
   margin-top: 40px;
+  padding: 2rem;
 }
 
 img {
@@ -169,6 +170,16 @@ img {
   div.search-bar input {
     width: 50%;
     padding: 10px 25px;
+  }
+
+  div.dog-images_container .dog-images {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  div.dog-images_container .dog-images {
+    padding: 0rem;
   }
 }
 </style>

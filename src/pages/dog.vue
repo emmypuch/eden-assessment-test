@@ -5,6 +5,7 @@
       <div class="image-container">
         <img :src="decodeURIComponent(dogUrl)" alt="dog breed picture" />
       </div>
+
       <div class="breed-information">
         <div class="breed-name">
           <h6>Name: Lorem Ipsum</h6>

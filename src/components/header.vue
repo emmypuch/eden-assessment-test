@@ -2,6 +2,7 @@
   <div class="logo">
     <a href="/"><h4>Dog Breeder</h4></a>
   </div>
+
   <div class="title">
     <h1>Don't buy, adopt!</h1>
   </div>
