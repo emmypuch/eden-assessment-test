@@ -6,7 +6,7 @@
     </div>
 
     <div class="select-breeds">
-      <select name="" id="" v-model="selectedBreed">
+      <select name="" id="custom-select" v-model="selectedBreed">
         <option value="">All</option>
         <option v-for="breed in getBreeds" :key="breed" :value="breed">
           {{ breed }}
@@ -129,8 +129,13 @@ div.search-bar {
 div.search-bar input {
   border-radius: 10px;
   border: 2px solid #124a44;
-  width: 20%;
-  padding: 10px 25px;
+  /* width: 20%;
+  padding: 10px 25px; */
+  width: 100%;
+  min-width: 15ch;
+  max-width: 30ch;
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
   outline: none;
   color: #0a3934;
 }
@@ -144,6 +149,22 @@ div.select-breeds {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+div.select-breeds select {
+  outline: none;
+  color: #0a3934;
+  width: 100%;
+  min-width: 15ch;
+  max-width: 30ch;
+  border: 1px solid #0a3934;
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1.2rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
 }
 
 div.dog-images_container .dog-images {
