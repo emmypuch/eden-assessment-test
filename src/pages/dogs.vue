@@ -18,8 +18,7 @@
       <div class="dog-images">
         <div v-for="dog in paginatedDogs" :key="dog.url">
           <router-link :to="`/dog/${encodeURIComponent(dog.url)}`">
-            <!-- <img :src="dog.url" alt="dog breed picture" /> -->
-            <v-lazy-image :src="dog.url" />
+            <v-lazy-image :src="dog.url" alt="dog breed picture" />
           </router-link>
         </div>
       </div>
