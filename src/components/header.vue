@@ -31,8 +31,11 @@ div.title h1 {
 }
 
 @media screen and (max-width: 768px) {
+  div.logo {
+    padding: 1rem;
+  }
   div.logo h4 {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   div.title h1 {
