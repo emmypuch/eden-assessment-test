@@ -18,7 +18,8 @@
       <div class="dog-images">
         <div v-for="dog in paginatedDogs" :key="dog.url">
           <router-link :to="`/dog/${encodeURIComponent(dog.url)}`">
-            <img :src="dog.url" alt="dog breed picture" />
+            <!-- <img :src="dog.url" alt="dog breed picture" /> -->
+            <v-lazy-image :src="dog.url" />
           </router-link>
         </div>
       </div>
@@ -34,11 +35,12 @@
 </template>
 
 <script>
+import VLazyImage from "v-lazy-image";
 import Header from "../components/header.vue";
 import Pagination from "../components/paginator.vue";
 export default {
   // eslint-disable-next-line vue/no-reserved-component-names
-  components: { Pagination, Header },
+  components: { Pagination, Header, "v-lazy-image": VLazyImage },
   name: "App",
   mounted() {
     this.$store.dispatch("fetchDogs");
@@ -129,13 +131,8 @@ div.search-bar {
 div.search-bar input {
   border-radius: 10px;
   border: 2px solid #124a44;
-  /* width: 20%;
-  padding: 10px 25px; */
-  width: 100%;
-  min-width: 15ch;
-  max-width: 30ch;
-  border-radius: 0.25em;
-  padding: 0.25em 0.5em;
+  width: 20%;
+  padding: 10px 25px;
   outline: none;
   color: #0a3934;
 }
@@ -154,13 +151,13 @@ div.select-breeds {
 div.select-breeds select {
   outline: none;
   color: #0a3934;
-  width: 100%;
-  min-width: 15ch;
-  max-width: 30ch;
+  width: 70%;
+  min-width: 11ch;
+  max-width: 20ch;
   border: 1px solid #0a3934;
   border-radius: 0.25em;
   padding: 0.25em 0.5em;
-  font-size: 1.2rem;
+  font-size: 1rem;
   cursor: pointer;
   line-height: 1.1;
   background-color: #fff;
@@ -181,6 +178,15 @@ img {
   width: 160px;
   height: 150px;
   border-radius: 5px;
+}
+
+.v-lazy-image {
+  filter: blur(20px);
+  transition: filter 0.7s;
+}
+
+.v-lazy-image-loaded {
+  filter: blur(0);
 }
 
 @media screen and (max-width: 768px) {
