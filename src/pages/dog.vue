@@ -8,26 +8,15 @@
 
       <div class="breed-information">
         <div class="breed-name">
-          <h6>Name: Lorem Ipsum</h6>
+          <h6>Adoption Guide</h6>
         </div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero neque
-          obcaecati vitae cumque? Ipsam ipsum officia voluptatem aut totam vel
-          quisquam optio adipisci veritatis doloremque! Aliquid possimus
-          laboriosam at harum. Aliquid ratione accusantium quo consequuntur
-          eius. Quod ipsum aperiam veritatis? Vero id obcaecati ut! Velit quidem
-          accusamus quisquam placeat dolores vel harum, qui odio commodi beatae,
-          fugiat, rerum ex! Qui animi incidunt cum doloremque debitis, optio
-          nemo iusto repudiandae tempore nostrum laborum quibusdam repellat quos
-          aliquam hic quisquam blanditiis itaque harum? Cupiditate neque
-          excepturi itaque a illo ea, alias tempore libero, corrupti qui rerum
-          in ab odio quod laboriosam sequi provident. Quaerat, maxime dolore?
-          Odit qui repudiandae alias illo, magni deleniti placeat. Amet, ipsa
-          debitis? Earum voluptas maxime beatae repellendus consequatur ea,
-          accusantium odit vero perferendis! Quae ab eaque asperiores. Explicabo
-          fugit ratione eos ullam! Aperiam eum sequi minima eius veritatis saepe
-          magnam consectetur dolores architecto, beatae, accusantium, eligendi
-          impedit?
+          Our dogs have undergone rigorous obedience training, and we have
+          specifically trained some to be service dogs as well as security dogs.
+          To adopt this dog, shoot us an email at
+          <a href="mailto: adoptdogs.com">Adopt Dogs</a> with a picture of the
+          dog and let us get started with the adoption process. You are going to
+          love having this dog in your life. Thank you, and speak soon 🙂
         </p>
       </div>
     </div>
@@ -68,11 +57,17 @@ div.breed-name h6 {
   margin-top: 30px;
 }
 
-p {
+div.breed-information p {
   font-size: 1.1rem;
   margin-top: 15px;
   color: #334645;
   padding-bottom: 10px;
+  line-height: 1.1;
+}
+
+a {
+  text-decoration: none;
+  color: #0f9a96;
 }
 
 @media screen and (max-width: 768px) {
@@ -93,8 +88,8 @@ p {
     font-size: 1.3rem;
   }
 
-  p {
-    font-size: 0.9rem;
+  div.breed-information p {
+    font-size: 1rem;
   }
 }
 </style>

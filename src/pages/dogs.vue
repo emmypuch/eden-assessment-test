@@ -159,12 +159,11 @@ div.select-breeds select {
   margin-left: 10px;
   border: 1px solid #0a3934;
   border-radius: 0.25em;
-  padding: 0.25em 0.5em;
+  padding: 10px 25px;
   font-size: 0.9rem;
   cursor: pointer;
   line-height: 1.1;
   background-color: #fff;
-  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
 }
 
 div.dog-images_container .dog-images {
