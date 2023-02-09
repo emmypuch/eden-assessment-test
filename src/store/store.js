@@ -29,7 +29,6 @@ export default createStore({
           url: dog,
         };
       });
-      // console.log("dogs", dogs);
       commit("GET_ALL_DOGS", dogs);
 
       // Extract unique breeds from the dogs list
