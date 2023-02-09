@@ -21,7 +21,7 @@ export default createStore({
   actions: {
     async fetchDogs({ commit }) {
       const dogsResponse = await axios.get(
-        "https://dog.ceo/api/breed/hound/images"
+        "https://dog.ceo/api/breed/eskimo/images"
       );
       const dogs = dogsResponse.data.message.map((dog) => {
         return {

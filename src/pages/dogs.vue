@@ -1,17 +1,23 @@
 <template>
   <div id="wrapper">
     <Header />
-    <div class="search-bar">
-      <input v-model="searchQuery" type="text" placeholder="Search me..." />
-    </div>
+    <div class="search-wrapper">
+      <div class="search-bar">
+        <input
+          v-model="searchQuery"
+          type="text"
+          placeholder="Search for breed..."
+        />
+      </div>
 
-    <div class="select-breeds">
-      <select name="" id="custom-select" v-model="selectedBreed">
-        <option value="">All</option>
-        <option v-for="breed in getBreeds" :key="breed" :value="breed">
-          {{ breed }}
-        </option>
-      </select>
+      <div class="select-breeds">
+        <select name="" id="custom-select" v-model="selectedBreed">
+          <option value="">All</option>
+          <option v-for="breed in getBreeds" :key="breed" :value="breed">
+            {{ breed }}
+          </option>
+        </select>
+      </div>
     </div>
 
     <div class="dog-images_container">
@@ -120,7 +126,7 @@ export default {
   background: #f9fbfb;
 }
 
-div.search-bar {
+div.search-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,35 +134,33 @@ div.search-bar {
 }
 
 div.search-bar input {
-  border-radius: 10px;
-  border: 2px solid #124a44;
-  width: 20%;
+  border-radius: 0.25em;
+  border: 1px solid #124a44;
+  width: 100%;
   padding: 10px 25px;
+  min-width: 11ch;
+  max-width: 20ch;
   outline: none;
   color: #0a3934;
+  line-height: 1.1;
 }
 
 ::placeholder {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #124a44;
-}
-
-div.select-breeds {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 div.select-breeds select {
   outline: none;
   color: #0a3934;
-  width: 70%;
+  width: 100%;
   min-width: 11ch;
   max-width: 20ch;
+  margin-left: 10px;
   border: 1px solid #0a3934;
   border-radius: 0.25em;
   padding: 0.25em 0.5em;
-  font-size: 1rem;
+  font-size: 0.9rem;
   cursor: pointer;
   line-height: 1.1;
   background-color: #fff;
@@ -200,6 +204,25 @@ img {
 
   div.dog-images_container .dog-images {
     padding: 1rem;
+  }
+
+  div.search-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.search-bar input {
+    width: 100%;
+    padding: 10px 25px;
+    min-width: 11ch;
+    max-width: 20ch;
+  }
+
+  div.select-breeds {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
   }
 }
 
