@@ -1,6 +1,7 @@
+<!-- eslint-disable vue/multi-word-component-names -->
 <template>
   <div>
-    <Header />
+    <Header></Header>
     <div class="wrapper">
       <div class="image-container">
         <img :src="decodeURIComponent(dogUrl)" alt="dog breed picture" />
